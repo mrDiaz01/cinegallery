@@ -16,7 +16,7 @@ export const PageNotFound = () => {
             404, Oopsy!
           </p>
           <div className="max-w-lg">
-            <img src={PageNotFoundImg} />
+            <img src={PageNotFoundImg} alt="oopsy image" />
           </div>
           <div className="flex justify-center my-10">
             <Link to="/">
