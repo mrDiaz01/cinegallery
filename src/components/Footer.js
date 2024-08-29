@@ -14,7 +14,7 @@ export const Footer = () => {
         <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
           <li>
             <a
-              href="#"
+              href="www.instagram.com"
               target="_blank"
               className="hover:underline me-4 md:me-6"
             >
@@ -23,7 +23,7 @@ export const Footer = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="www.linkedin.com"
               target="_blank"
               className="hover:underline me-4 md:me-6"
             >
@@ -32,7 +32,7 @@ export const Footer = () => {
           </li>
           <li>
             <a
-              href="#"
+              href="www.youtube.com"
               target="_blank"
               className="hover:underline me-4 md:me-6"
             >
@@ -40,7 +40,11 @@ export const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="#" target="_blank" className="hover:underline">
+            <a
+              href="www.github.com"
+              target="_blank"
+              className="hover:underline"
+            >
               Github
             </a>
           </li>
