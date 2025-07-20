@@ -9,9 +9,9 @@ export const Card = ({ movie }) => {
     : PlaceHolder;
 
   return (
-    <div className="max-w-sm bg-white border border-gray-200 cursor-pointer rounded-lg shadow dark:hover:bg-gray-700 hover:bg-gray-100 hover:-translate-y-2 duration-300 ease-in-out  dark:bg-gray-800 dark:border-gray-700">
+    <div className="w-60 bg-white border border-gray-200 cursor-pointer rounded-lg shadow dark:hover:bg-gray-700 hover:bg-gray-100 hover:-translate-y-2 duration-300 ease-in-out dark:bg-gray-800 dark:border-gray-700 m-2">
       <Link to={`/movie/${id}`}>
-        <img className="rounded-t-lg" src={image} alt="" />
+        <img className="rounded-t-lg" src={image} alt="movie poster" />
       </Link>
       <div className="p-5">
         <Link to={`/movie/${id}`}>
@@ -19,7 +19,15 @@ export const Card = ({ movie }) => {
             {original_title}
           </h5>
         </Link>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <p
+          className="mb-3 font-normal text-gray-700 dark:text-gray-400 overflow-hidden"
+          style={{
+            display: '-webkit-box',
+            WebkitLineClamp: 3,
+            WebkitBoxOrient: 'vertical',
+            overflow: 'hidden'
+          }}
+        >
           {overview}
         </p>
       </div>

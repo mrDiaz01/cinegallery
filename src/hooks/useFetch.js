@@ -9,7 +9,7 @@ export const useFetch = (apiPath, queryTerm = "") => {
     async function fetchMovies() {
       const response = await fetch(url);
       const json = await response.json();
-      setData(json.results); //results are part of the response
+      setData(json.results);
     }
     fetchMovies();
   }, [url]);
